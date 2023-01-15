@@ -28,7 +28,6 @@
 ![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice1.png)
 ![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice2.png)
 ![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice3.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice4.png)
 
 ### Setup 🔧:
 
