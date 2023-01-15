@@ -10,7 +10,7 @@ host=`cat /etc/hostname`
 
 # Options
 shutdown=' Shutdown'
-reboot='  Reboot'
+reboot=' Reboot'
 lock=' Lock'
 suspend='  Suspend'
 logout='  Logout'
