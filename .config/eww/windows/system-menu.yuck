@@ -202,7 +202,7 @@
         (button
           :halign "end"
           :class "power-button icon"
-          :onclick "$HOME/.config/eww/scripts/power-menu/powermenu.sh"
+          :onclick "wlogout -p layer-shell &"
           "")))))
 
 ;; windows
