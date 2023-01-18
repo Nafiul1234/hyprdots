@@ -26,15 +26,27 @@ local diagnostics = {
 	always_visible = false,
 }
 
+local branch = {
+	"branch",
+	icon = "",
+	color = { bg = "#1F2530", fg = "#CBA6F7" },
+	separator = { left = "", right = "" },
+	{
+		function()
+			return " "
+		end,
+	},
+}
+
 local diff = {
 	"diff",
 	colored = true,
 	symbols = {
-		added = " ",
-		modified = " ",
-		removed = " ",
+		added = " ",
+		modified = " ",
+		removed = " ",
 	},
-	color = { bg = "#242735" },
+	color = { bg = "#1F2530" },
 	separator = { left = "", right = "" },
 }
 
@@ -48,9 +60,9 @@ local location = {
 	padding = 0,
 }
 
-local vim_icons = {
+local custom_icons = {
 	function()
-		return ""
+		return ""
 	end,
 	separator = { left = "", right = "" },
 }
@@ -60,12 +72,6 @@ local modes = {
 	separator = { left = "", right = "" },
 }
 
-local branch = {
-	"branch",
-	icon = "",
-	color = { bg = "#242735", fg = "#c296eb" },
-	separator = { left = "", right = "" },
-}
 local spaces = function()
 	return "" .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
@@ -155,8 +161,8 @@ lualine.setup({
 	},
 	sections = {
 		lualine_a = {
-			vim_icons,
-			-- modes,
+			custom_icons,
+			modes,
 		},
 		lualine_b = {},
 		lualine_c = {
@@ -172,26 +178,34 @@ lualine.setup({
 			diff,
 			{
 				function()
-					return ""
+					return ""
 				end,
-				color = { bg = "#8FCDA9", fg = "#121319" },
 				separator = { left = "", right = "" },
+				color = { bg = "#FB958B", fg = "#000000" },
 			},
 			diagnostics,
 		},
 		lualine_x = {
-			lsp_progess,
+			spaces,
 			{
 				function()
-					return ""
+					return "﬌"
 				end,
 				separator = { left = "", right = "" },
-				color = { bg = "#C296EB", fg = "#000000" },
+				color = { bg = "#8FBCBB", fg = "#000000" },
 			},
+			-- lsp_progess,
+			-- {
+			-- 	function()
+			-- 		return ""
+			-- 	end,
+			-- 	separator = { left = "", right = "" },
+			-- 	color = { bg = "#C296EB", fg = "#000000" },
+			-- },
 			"progress",
 			{
 				function()
-					return ""
+					return ""
 				end,
 				separator = { left = "", right = "" },
 				color = { bg = "#ECD3A0", fg = "#000000" },

@@ -111,10 +111,24 @@ return packer.startup(function(use)
 	use({ "fgheng/winbar.nvim" })
 	use({ "NvChad/nvim-colorizer.lua" })
 	use({ "folke/todo-comments.nvim" })
+	use({
+		"aurum77/live-server.nvim",
+		run = function()
+			require("live_server.util").install()
+		end,
+		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+	})
 
 	-- Note that you have to install deno first
-	use({ "toppair/peek.nvim", run = "deno task --quiet build:fast" })
 	use({ "karb94/neoscroll.nvim" })
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = "cd app && npm install",
+		setup = function()
+			vim.g.mkdp_filetypes = { "markdown" }
+		end,
+		ft = { "markdown" },
+	})
 
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
