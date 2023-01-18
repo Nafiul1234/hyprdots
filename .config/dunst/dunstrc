@@ -1,5 +1,5 @@
 [global]
-  font = "Mononoki Nerd Font"
+  font = "Product Sans"
 
 	# Allow a small subset of html markup:
 	# <b>bold</b>
@@ -166,7 +166,7 @@
 	# corners.
 	# The radius will be automatically lowered if it exceeds half of the
 	# notification height to avoid clipping text and/or icons.
-	corner_radius = 10
+	corner_radius = 17
 
 	# Always run rule-defined scripts, even if the notification is suppressed
 	always_run_script = true
@@ -176,16 +176,13 @@
 	mouse_middle_click = do_action, close_current
 	mouse_right_click = close_all
 
-# [openEwwPopup]
-# 	script = ~/.config/dunst/scripts/openEwwPopup.sh
-
 [songArtLogger]
 	script = ~/.config/dunst/scripts/songArtLogger.sh
 
 [urgency_low]
 	timeout = 6
 	background = "#0d0f16"
-	foreground = "#9fa0a0"
+	foreground = "#CDD6F4"
 	frame_color = "#191d24"
 	highlight = "#7ba5dd"
 
@@ -193,7 +190,7 @@
 	# script = ~/.config/dunst/scripts/playNotificationSound.sh
 	timeout = 6
 	background = "#0d0f16"
-	foreground = "#c5c8c9"
+	foreground = "#CDD6F4"
 	frame_color = "#0d0f16"
 	highlight = "#7ba5dd"
 
@@ -201,7 +198,7 @@
 	script = ~/.config/dunst/scripts/playNotificationSound.sh
 	timeout = 6
 	background = "#0d0f16"
-	foreground = "#c5c8c9"
+	foreground = "#CDD6F4"
 	frame_color = "#0d0f16"
 	highlight = "#ee6a70"
 
