@@ -2,13 +2,14 @@
   @include window;
   background-color: $bg;
   border: 1px solid $border;
+  border-radius: 13px;
   color: $fg;
   padding: .2em;
 }
 
 calendar {
   padding: 5px;
-
+  border-radius: 13px;
   :selected {
     color: $mauve;
   }

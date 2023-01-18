@@ -27,7 +27,7 @@
 .bar {
   background-color: $bg;
   color: $fg;
-  border-radius: 13px;
+  border-radius: 12.5px;
   label {
     font-size: 1.3rem;
   }
@@ -61,6 +61,7 @@ tooltip {
   background: $bg;
   color: $flamingo;
 
+  border-radius: 12.5px;
   label {
     font-size: 1.2rem;
   }
@@ -68,10 +69,10 @@ tooltip {
 
 .bright-icon { 
   color: $yellow; 
+  margin: 0px -7px 0px 1px;
 }
 .module-bt { 
   font-size: 1.2rem; 
-
 }
 
 scale trough {
