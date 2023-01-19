@@ -91,9 +91,9 @@ M.on_attach = function(client, bufnr)
 	end
 	illuminate.on_attach(client)
 	vim.g.navic_silence = false
+
 	local symbols_supported = client.supports_method("textDocument/documentSymbol")
 	if not symbols_supported then
-		Log:debug("skipping setup for document_symbols, method not supported by " .. client.name)
 		return
 	end
 	local status_ok, navic = pcall(require, "nvim-navic")

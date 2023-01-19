@@ -27,9 +27,9 @@ nvim_tree.setup({
 			},
 		},
 		icons = {
-      show = { 
-        folder_arrow = false
-      },
+			show = {
+				folder_arrow = false,
+			},
 			glyphs = {
 				default = "",
 				symlink = "",

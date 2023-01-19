@@ -170,9 +170,11 @@ lualine.setup({
 				"filetype",
 				icon_only = true,
 				colored = true,
+				padding = 1,
 			},
 			{
 				"filename",
+				padding = 1,
 			},
 			branch,
 			diff,
