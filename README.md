@@ -107,6 +107,8 @@ Necessary Font:
 - [Material Design Icons](https://github.com/google/material-design-icons/tree/master/variablefont)
   > Note that install the [MaterialSymbolsOutlined](https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf) and [this](https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.woff2) , **just to make sure**
 
+- [Products Sans](https://github.com/iamverysimp1e/fonts/raw/master/product-sans.zip)
+
 Optional Font:
 
 - [NotoColorEmoji](https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf)
