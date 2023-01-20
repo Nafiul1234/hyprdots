@@ -12,7 +12,7 @@
 
 </div>
 
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/Combined.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/Combined.png)
 
 ## Contents:
 
@@ -25,10 +25,10 @@
 
 ## Hyprland 🍚<a name = "hypr"></a>:
 
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice1.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice2.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice3.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/HyprLand/Rice4.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice1.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice2.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice3.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice4.png)
 
 ### Setup 🔧:
 
@@ -104,11 +104,8 @@ Necessary Font:
 
 - [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip)
 
-- [Mononoki Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Mononoki.zip)
-
 Optional Font:
 
-- [Iosevka Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/Iosevka.zip)
 - [NotoColorEmoji](https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf)
 - [Codicon](https://github.com/microsoft/vscode-codicons/raw/main/dist/codicon.ttf)
 
@@ -131,9 +128,9 @@ Thanks to [R/unixporn community](https://www.reddit.com/r/unixporn/) & [Hyprland
 
 ## GNOME 🍙<a name = "gnome"></a>:
 
-![](https://github.com/iamverysimp1e/Public-Dot-Files/blob/main/ScreenShots/Gnome_Rice/Rice1.png)
-![](https://github.com/iamverysimp1e/Public-Dot-Files/blob/main/ScreenShots/Gnome_Rice/Rice2.png)
-![](https://github.com/iamverysimp1e/Public-Dot-Files/blob/main/ScreenShots/Gnome_Rice/Rice3.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/Gnome_Rice/Rice1.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/Gnome_Rice/Rice2.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/Gnome_Rice/Rice3.png)
 
 <details><summary> Gnome configs </summary><blockquote>
 
