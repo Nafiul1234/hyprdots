@@ -43,7 +43,7 @@ tooltip {
   }
 }
 
-.icon, .icon label { font-family: Material Symbols Outlined; }
+.icon, .icon, .vol-icon label { font-family: "Material Symbols Outlined"; }
 
 .module { margin: 0 5px; }
 
@@ -67,12 +67,17 @@ tooltip {
   }
 }
 
+.vol-icon label {
+  font-family: ProductSans;
+}
+
 .bright-icon { 
   color: $yellow; 
   margin: 0px -7px 0px 1px;
 }
 .module-bt { 
   font-size: 1.2rem; 
+  margin: 0px 1px 0px 1px;
 }
 
 scale trough {
