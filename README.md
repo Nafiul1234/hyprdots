@@ -104,12 +104,17 @@ Necessary Font:
 
 - [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip)
 
+- [Material Design Icons](https://github.com/google/material-design-icons/tree/master/variablefont)
+  > Note that install the [MaterialSymbolsOutlined](https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf) and [this](https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.woff2) , **just to make sure**
+
 Optional Font:
 
 - [NotoColorEmoji](https://github.com/googlefonts/noto-emoji/raw/main/fonts/NotoColorEmoji.ttf)
 - [Codicon](https://github.com/microsoft/vscode-codicons/raw/main/dist/codicon.ttf)
 
-Once you download them and unpack them, place them into ~/.fonts or ~/.local/share/fonts.
+> Or either way, check my [fonts](https://github.com/iamverysimp1e/fonts) repos where i store all of the programming fonts.
+
+Once you download them and unpack them, place them into `~/.fonts` or `~/.local/share/fonts.`
 
 Then run this command for your system to detect the newly installed fonts.
 
@@ -122,7 +127,11 @@ Log out your current desktop session and login to Hyprland:)
 
 ## Credits
 
-Thanks to [R/unixporn community](https://www.reddit.com/r/unixporn/) & [Hyprland Development Discord server](https://discord.com/invite/hQ9XvMUjjr)
+Thanks to:
+
+- [R/unixporn community](https://www.reddit.com/r/unixporn/)
+- [Hyprland Development Discord server](https://discord.com/invite/hQ9XvMUjjr)
+- [fufexan](https://github.com/fufexan/dotfiles) for the bar :)
 
 </blockquote></details>
 
