@@ -118,6 +118,7 @@ return packer.startup(function(use)
 		end,
 		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
 	})
+	use({ "folke/zen-mode.nvim" })
 
 	-- Note that you have to install deno first
 	use({ "karb94/neoscroll.nvim" })
