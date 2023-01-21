@@ -11,10 +11,12 @@
       (button
         :class "module"
         :onclick "${EWW_CMD} open --toggle music"
+        :style "font-family: ProductSans;"
         {music.title})
       (revealer
         :transition "slideright"
         :reveal music_reveal
+        :style "font-family: ProductSans;"
         :duration "350ms"
         (box
           :class "icon"

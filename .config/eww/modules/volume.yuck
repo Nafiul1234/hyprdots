@@ -17,5 +17,6 @@
       :duration "350ms"
       (label
        :class "vol-text"
+       :style "font-family: ProductSans;"
        :text "${volume.percent}%")
       ))))

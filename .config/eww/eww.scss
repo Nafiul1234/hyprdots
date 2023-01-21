@@ -14,7 +14,7 @@
 * {
   all: unset;
   transition: 200ms ease;
-  font-family: Product Sans, Roboto, sans-serif;
+  // font-family: Product Sans, Roboto, sans-serif;
 }
 
 @import 'css/calendar';
@@ -67,6 +67,14 @@ tooltip {
   }
 }
 
+.launcher_module {
+  background-color: $bg;
+  border-radius: 12.5px;
+  margin: 0px 1px 0px 10px;
+}
+
+.vol-icon {font-family: 'Material Symbols Rounded';}
+
 .vol-icon label {
   font-family: ProductSans;
 }
@@ -74,11 +82,20 @@ tooltip {
 .bright-icon { 
   color: $yellow; 
   margin: 0px -7px 0px 1px;
+  font-family: ProductSans;
 }
+
 .module-bt { 
   font-size: 1.2rem; 
   margin: 0px 1px 0px 1px;
+  font-family: 'Material Symbols Rounded';
 }
+
+.net-icon {
+  font-family: Product Sans;
+}
+
+.net-icon {font-family: 'Material Symbols Rounded';}
 
 scale trough {
   background-color: $bg1;

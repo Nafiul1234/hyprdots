@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
 
-declare -A baticon=([10]="󰤾" [20]="󰤿" [30]="󰥀" [40]="󰥁" [50]="󰥂" [60]="󰥃" [70]="󰥄" [80]="󰥅" [90]="󰥆" [100]="󰥈")
+#!/usr/bin/env bash
 
 toggle() {
   status=$(rfkill -J | jaq -r '.rfkilldevices[] | select(.type == "bluetooth") | .soft' | head -1)
@@ -22,10 +21,9 @@ else
     mac=$(echo "$status" | head -1 | awk '{print $2}' | tr ':' '_')
 
     if [[ "$(echo "$status" | rg Percentage)" != "" ]]; then
-      battery=$(upower -i /org/freedesktop/UPower/devices/headset_dev_"$mac" | rg percentage | awk '{print $2}' | cut -f 1 -d '%')
-      batt_icon=${baticon[$battery]}
+      battery="$(upower -i /org/freedesktop/UPower/devices/headset_dev_"$mac" | rg percentage | awk '{print $2}' | cut -f 1 -d '%')%"
     else
-      batt_icon=""
+      battery=""
     fi
 
     if [ "$powered" = "yes" ]; then
@@ -33,18 +31,21 @@ else
         text="$name"
         icon=""
         color="#89b4fa"
+        class="bt-connected"
       else
         icon=""
         text="Disconnected"
         color="#45475a"
+        class=""
       fi
     else
       icon=""
       text="Bluetooth off"
       color="#45475a"
+      class=""
     fi
 
-    echo '{ "icon": "'"$icon"'", "batt_icon": "'"$batt_icon"'", "text": "'"$text"'", "color": "'"$color"'" }'
+    echo '{ "icon": "'"$icon"'", "battery": "'"$battery"'", "text": "'"$text"'", "color": "'"$color"'", "class": "'"$class"'" }'
 
     sleep 3
   done
