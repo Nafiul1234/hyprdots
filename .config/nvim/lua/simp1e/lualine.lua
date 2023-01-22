@@ -172,15 +172,15 @@ lualine.setup({
 			{
 				"filetype",
 				icon_only = true,
-				colored = true,
+				colored = false,
 				padding = 1,
-        color = { bg = "#24282c", fg = "#CDD6F4" }
+        color = { bg = "#2a2c3f"}
 			},
 			{
 				"filename",
 				padding = 1,
 				separator = { left = "", right = "" },
-        color = { bg = "#24282c", fg = "#CDD6F4" }
+        color = { bg = "#2a2c3f"}
 			},
     },
 		lualine_c = {
@@ -189,6 +189,7 @@ lualine.setup({
 		},
 		lualine_x = {
 			diagnostics,
+
       {
         lsp_progess,
       },
