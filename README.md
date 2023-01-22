@@ -44,7 +44,7 @@
   yay -S hyprland-git
   ```
 
-- Install Rofi, Dunst, Waybar, kitty terminal, swaybg, swaylock-effects, swayidle, pamixer, light, B:
+- Install Rofi, Dunst, Waybar, kitty terminal, swaybg, swaylock-effects, swayidle, pamixer, light, Brillo:
 
   ```
   yay -S rofi dunst waybar-hyprland-git kitty swaybg swaylock-effects swayidle pamixer light brillo
