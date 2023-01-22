@@ -94,15 +94,15 @@ _G.packer_plugins = {
     path = "/home/peter/.local/share/nvim/site/pack/packer/start/alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
-  ["aquarium-vim"] = {
-    loaded = true,
-    path = "/home/peter/.local/share/nvim/site/pack/packer/start/aquarium-vim",
-    url = "https://github.com/frenzyexists/aquarium-vim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/peter/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  catppuccin = {
+    loaded = true,
+    path = "/home/peter/.local/share/nvim/site/pack/packer/start/catppuccin",
+    url = "https://github.com/catppuccin/nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,

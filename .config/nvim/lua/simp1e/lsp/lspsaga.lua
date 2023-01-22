@@ -1,13 +1,12 @@
-local status_ok, saga = pcall(require,"lspsaga")
+local status_ok, saga = pcall(require, "lspsaga")
 
 saga.setup({
-  ui ={ 
-    winblend = 10,
-    border = 'rounded',
-    colors ={ 
-      normal_bg = '#141521'
-    }
-  }
+	ui = {
+		winblend = 10,
+		border = "rounded",
+		colors = require("catppuccin.groups.integrations.lsp_saga").custom_colors(),
+		kind = require("catppuccin.groups.integrations.lsp_saga").custom_kind(),
+	},
 })
 
 local keymap = vim.keymap.set
@@ -18,14 +17,13 @@ local keymap = vim.keymap.set
 keymap("n", "gh", "<cmd>Lspsaga lsp_finder<CR>")
 
 -- Code action
-keymap({"n","v"}, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
+keymap({ "n", "v" }, "<leader>ca", "<cmd>Lspsaga code_action<CR>")
 
 -- Rename
 keymap("n", "<leader>gr", "<cmd>Lspsaga rename<CR>")
 
 -- Go to Definition
-keymap("n","gd", "<cmd>Lspsaga goto_definition<CR>")
-
+keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>")
 
 -- Show cursor diagnostic
 -- also like show_line_diagnostics  support pass ++unfocus
@@ -38,5 +36,5 @@ keymap("n", "<leader>sb", "<cmd>Lspsaga show_buf_diagnostics<CR>")
 keymap("n", "<C-j>", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
 keymap("n", "<C-k>", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 
-keymap('i', '<C-l>', '<cmd>lua vim.lsp.buf.signature_help()<CR>')
-keymap('n', 'gp', '<Cmd>Lspsaga peek_definition<CR>')
+keymap("i", "<C-l>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
+keymap("n", "gp", "<Cmd>Lspsaga peek_definition<CR>")

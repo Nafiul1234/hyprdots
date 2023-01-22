@@ -160,7 +160,7 @@ lualine.setup({
 		theme = "auto",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
-		disabled_filetypes = { "alpha", "dashboard" },
+    disabled_filetypes = { "alpha", "dashboard", 'packer', 'NVimTree' },
 		always_divide_middle = true,
 	},
 	sections = {
@@ -174,11 +174,13 @@ lualine.setup({
 				icon_only = true,
 				colored = true,
 				padding = 1,
+        color = { bg = "#24282c", fg = "#CDD6F4" }
 			},
 			{
 				"filename",
 				padding = 1,
 				separator = { left = "", right = "" },
+        color = { bg = "#24282c", fg = "#CDD6F4" }
 			},
     },
 		lualine_c = {
