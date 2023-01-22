@@ -1,14 +1,19 @@
 <div align="center">
-    <h1>✨Tue Nhan's dot files✨</h1>
-    <h3></h3>
+    <h1>✨Tue Nhan's Dot Files✨</h1>
+    <h3>A place where I store all of my own customization </h3>
 </div>
 
 <div align="center">
 
 ![](https://img.shields.io/github/last-commit/iamverysimp1e/dots?&style=for-the-badge&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41)
 ![](https://img.shields.io/github/stars/iamverysimp1e/dots?style=for-the-badge&logo=starship&color=8bd5ca&logoColor=D9E0EE&labelColor=302D41)
-[![](https://img.shields.io/badge/Neovim-0.9+-blueviolet.svg?style=for-the-badge&logo=Neovim&color=ee999f&logoColor=D9E0EE&labelColor=302D41)](https://github.com/neovim/neovim)
 [![](https://img.shields.io/github/repo-size/iamverysimp1e/dots?color=%23DDB6F2&label=SIZE&logo=codesandbox&style=for-the-badge&logoColor=D9E0EE&labelColor=302D41)](https://github.com/iamverysimp1e/dots)
+<a href="https://github.com/iamverysimp1e/dots/blob/main/LICENSE">
+<img alt="License" src="https://img.shields.io/github/license/iamverysimp1e/dots?style=for-the-badge&logo=starship&color=ee999f&logoColor=D9E0EE&labelColor=302D41" />
+</a>
+<a href="https://github.com/iamverysimp1e/dots/issues">
+<img alt="Issues" src="https://img.shields.io/github/issues/iamverysimp1e/dots?style=for-the-badge&logo=bilibili&color=F5E0DC&logoColor=D9E0EE&labelColor=302D41" />
+</a>
 
 </div>
 
@@ -18,10 +23,12 @@
 
 ### **👻 Don't blindly use my setup. Use at your own risk!!!**
 
-- [Windows Manger]():
-  - [HyprLand 🍚](#hypr)
-  - [GNOME 🍙](#gnome)
-- [Neovim Setups](#neovim)
+- [🌿 Windows Manger]():
+  - [🍚 HyprLand](#hypr)
+  - [🍙 GNOME](#gnome)
+- [✏️ Text Editor & IDE]():
+  - [💫 NeoVim](#neovim): **Main Text Editor**
+  - [🔱 VsCodium](#VsCodium): **Just for back up**
 
 ## Hyprland 🍚<a name = "hypr"></a>:
 
@@ -44,13 +51,37 @@
   yay -S hyprland-git
   ```
 
-- Install Rofi, Dunst, Waybar, kitty terminal, swaybg, swaylock-effects, swayidle, pamixer, light, Brillo:
+- Base setups:
+
+  - Install Rofi, Dunst, kitty terminal, swaybg, swaylock-effects, swayidle, pamixer, light, Brillo:
 
   ```
-  yay -S rofi dunst waybar-hyprland-git kitty swaybg swaylock-effects swayidle pamixer light brillo
+  yay -S rofi dunst kitty swaybg swaylock-effects swayidle pamixer light brillo
   ```
 
-- Other Ultilities:
+    <details><summary> Eww bar version</summary><blockquote>
+
+  ```
+  yay -S bc blueberry bluez coreutlis dbus findutlis gawk gnunet jaq light networkmanager network-manager-applet pavucontrol playerctl procps ripgrep socat udev upower util-linux wget wireplumber wlogout eww-wayland
+  ```
+
+    </blockquote></details>
+
+    <details><summary> Waybar version</summary><blockquote>
+
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice1.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice2.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice3.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice4.png)
+    - You just simply install waybar-hyprland package:
+
+        ```
+        yay -S waybar-hyprland
+        ```
+
+    </blockquote></details>
+
+- Other Utilities:
 
   - For screenshots tools to be work you have to install grim, swappy, slurp:
 
@@ -62,7 +93,7 @@
     ```
     yay -S rofi-emoji
     ```
-    > Also see [must have apps ](https://wiki.hyprland.org/Useful-Utilities/Must-have/)
+    > Also see [must have apps ](https://wiki.hyprland.org/Useful-Utilities/Must-have/) and [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) for more.
 
 - Also, if you want gtk applications to fits with my colorscheme on my dots, I recommend the [decay themes](https://github.com/decaycs/decay-gtk).
   To change the gtk themes I use nwg-look.
@@ -79,7 +110,8 @@
   cp -r ./Themes/<theme> ~/.themes
   ```
   > After that, launch nwg-look then choose the decay themes
-  </blockquote></details>
+
+</blockquote></details>
 
 <details><summary>2. Install my dots:</summary><blockquote>
 
@@ -90,12 +122,10 @@ git clone https://github.com/iamverysimp1e/dots
 cd dots/.config
 ```
 
-> Copy configs file + Wallpaper
+> Copy configs files
 
 ```zsh
-cp -r waybar kitty hypr rofi dunst swaylock ~/.config
-# Wallpaper
-cp -r Wallpaper ~/Pictures
+cp -r waybar kitty hypr rofi dunst swaylock eww ~/.config
 ```
 
 > Install a few font
@@ -105,6 +135,7 @@ Necessary Font:
 - [JetBrains Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/JetBrainsMono.zip)
 
 - [Material Design Icons](https://github.com/google/material-design-icons/tree/master/variablefont)
+
   > Note that install the [MaterialSymbolsOutlined](https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.ttf) and [this](https://github.com/google/material-design-icons/raw/master/variablefont/MaterialSymbolsOutlined%5BFILL%2CGRAD%2Copsz%2Cwght%5D.woff2) , **just to make sure**
 
 - [Products Sans](https://github.com/iamverysimp1e/fonts/raw/master/product-sans.zip)
