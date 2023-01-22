@@ -135,7 +135,7 @@ local lsp_progess = function()
 		local registered_providers = list_registered_providers_names(filetype)
 		return registered_providers[null_ls.methods.FORMATTING] or {}
 	end
-	-- -- formatters
+	-- formatters
 	-- local supported_formatters = formatters_list_registered(buf_ft)
 	-- vim.list_extend(buf_client_names, supported_formatters)
 
@@ -191,9 +191,7 @@ lualine.setup({
 			diagnostics,
       {
         lsp_progess,
-				separator = { left = "", right = "" },
       },
-			indent,
 			{
 				function()
 					return "﬌"
@@ -201,7 +199,8 @@ lualine.setup({
 				separator = { left = "", right = "" },
 				color = { bg = "#8FBCBB", fg = "#000000" },
 			},
-			"progress",
+
+			indent,
 			{
 				function()
 					return ""
@@ -209,7 +208,7 @@ lualine.setup({
 				separator = { left = "", right = "" },
 				color = { bg = "#ECD3A0", fg = "#000000" },
 			},
-      location,
+			"progress",
 			{
 				function()
 					return ""
@@ -217,6 +216,7 @@ lualine.setup({
 				separator = { left = "", right = "" },
 				color = { bg = "#86AAEC", fg = "#000000" },
 			},
+      location,
 		},
 		lualine_y = {
     },
