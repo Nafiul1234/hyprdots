@@ -32,11 +32,6 @@
 
 ## Hyprland 🍚<a name = "hypr"></a>:
 
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice1.png)
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice2.png)
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice3.png)
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice4.png)
-
 ### Setup 🔧:
 
 > To install my dots just [R.T.F.M](https://en.wikipedia.org/wiki/RTFM)
@@ -69,10 +64,11 @@
 
     <details><summary> Waybar version</summary><blockquote>
 
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice1.png)
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice2.png)
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice3.png)
-![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice4.png)
+        ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice1.png)
+        ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice2.png)
+        ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice3.png)
+        ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice4.png)
+
     - You just simply install waybar-hyprland package:
 
         ```
