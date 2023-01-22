@@ -66,6 +66,7 @@ return packer.startup(function(use)
 		"rose-pine/neovim",
 		as = "rose-pine",
 	})
+  use 'frenzyexists/aquarium-vim'
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp" }) -- The completion plugin

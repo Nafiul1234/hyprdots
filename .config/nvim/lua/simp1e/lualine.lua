@@ -26,10 +26,15 @@ local diagnostics = {
 	always_visible = false,
 }
 
+local spaces = { 
+  function ()
+    return " "
+  end
+}
+
 local branch = {
 	"branch",
 	icon = "",
-	color = { bg = "#1F2530", fg = "#CBA6F7" },
 	separator = { left = "", right = "" },
 	{
 		function()
@@ -46,7 +51,6 @@ local diff = {
 		modified = " ",
 		removed = " ",
 	},
-	color = { bg = "#1F2530" },
 	separator = { left = "", right = "" },
 }
 
@@ -57,7 +61,7 @@ local filetype = {
 
 local location = {
 	"location",
-	padding = 0,
+  padding = 1,
 }
 
 local custom_icons = {
@@ -72,7 +76,7 @@ local modes = {
 	separator = { left = "", right = "" },
 }
 
-local spaces = function()
+local indent = function()
 	return "" .. vim.api.nvim_buf_get_option(0, "shiftwidth")
 end
 
@@ -131,16 +135,16 @@ local lsp_progess = function()
 		local registered_providers = list_registered_providers_names(filetype)
 		return registered_providers[null_ls.methods.FORMATTING] or {}
 	end
-	-- formatters
-	local supported_formatters = formatters_list_registered(buf_ft)
-	vim.list_extend(buf_client_names, supported_formatters)
+	-- -- formatters
+	-- local supported_formatters = formatters_list_registered(buf_ft)
+	-- vim.list_extend(buf_client_names, supported_formatters)
 
 	-- linters
 	local supported_linters = list_registered(buf_ft)
 	vim.list_extend(buf_client_names, supported_linters)
 	local unique_client_names = vim.fn.uniq(buf_client_names)
 
-	local language_servers = "" .. table.concat(unique_client_names, ", ") .. ""
+	local language_servers = " " .. table.concat(unique_client_names, ", ") .. ""
 
 	if copilot_active then
 		language_servers = language_servers .. "%#SLCopilot#" .. ""
@@ -164,8 +168,7 @@ lualine.setup({
 			custom_icons,
 			modes,
 		},
-		lualine_b = {},
-		lualine_c = {
+		lualine_b = {
 			{
 				"filetype",
 				icon_only = true,
@@ -175,20 +178,20 @@ lualine.setup({
 			{
 				"filename",
 				padding = 1,
+				separator = { left = "", right = "" },
 			},
+    },
+		lualine_c = {
 			branch,
 			diff,
-			{
-				function()
-					return ""
-				end,
-				separator = { left = "", right = "" },
-				color = { bg = "#FB958B", fg = "#000000" },
-			},
-			diagnostics,
 		},
 		lualine_x = {
-			spaces,
+			diagnostics,
+      {
+        lsp_progess,
+				separator = { left = "", right = "" },
+      },
+			indent,
 			{
 				function()
 					return "﬌"
@@ -196,14 +199,6 @@ lualine.setup({
 				separator = { left = "", right = "" },
 				color = { bg = "#8FBCBB", fg = "#000000" },
 			},
-			-- lsp_progess,
-			-- {
-			-- 	function()
-			-- 		return ""
-			-- 	end,
-			-- 	separator = { left = "", right = "" },
-			-- 	color = { bg = "#C296EB", fg = "#000000" },
-			-- },
 			"progress",
 			{
 				function()
@@ -212,9 +207,7 @@ lualine.setup({
 				separator = { left = "", right = "" },
 				color = { bg = "#ECD3A0", fg = "#000000" },
 			},
-			{
-				"location",
-			},
+      location,
 			{
 				function()
 					return ""
@@ -223,7 +216,8 @@ lualine.setup({
 				color = { bg = "#86AAEC", fg = "#000000" },
 			},
 		},
-		lualine_y = {},
+		lualine_y = {
+    },
 		lualine_z = {},
 	},
 })
