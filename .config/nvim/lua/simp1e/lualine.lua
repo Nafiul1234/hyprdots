@@ -179,7 +179,7 @@ lualine.setup({
 			{
 				"filename",
 				padding = 1,
-				separator = { left = "", right = "" },
+				separator = { left = "", right = "" },
         color = { bg = "#2a2c3f"}
 			},
     },
