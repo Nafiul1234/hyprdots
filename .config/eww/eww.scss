@@ -43,9 +43,15 @@ tooltip {
   }
 }
 
-.icon, .icon, .vol-icon label { font-family: "Material Symbols Outlined"; }
+.icon,
+.icon,
+.vol-icon label {
+  font-family: 'Material Symbols Outlined';
+}
 
-.module { margin: 0 5px; }
+.module {
+  margin: 0 5px;
+}
 
 .hour {
   font-weight: bold;
@@ -54,7 +60,7 @@ tooltip {
 
 .minute {
   font-weight: bold;
-  padding-right: .7rem;  
+  padding-right: 0.7rem;
 }
 
 .date {
@@ -67,35 +73,44 @@ tooltip {
   }
 }
 
+.sys-text-sub {
+  font-family: ProductSans;
+}
+
 .launcher_module {
   background-color: $bg;
   border-radius: 12.5px;
   margin: 0px 1px 0px 10px;
 }
 
-.vol-icon {font-family: 'Material Symbols Rounded';}
+.vol-icon,
+.volume-icon {
+  font-family: 'Material Symbols Outlined';
+}
 
 .vol-icon label {
   font-family: ProductSans;
 }
 
-.bright-icon { 
-  color: $yellow; 
+.bright-icon {
+  color: $yellow;
   margin: 0px -7px 0px 1px;
   font-family: ProductSans;
 }
 
-.module-bt { 
-  font-size: 1.2rem; 
+.module-bt {
+  font-size: 1.2rem;
   margin: 0px 1px 0px 1px;
-  font-family: 'Material Symbols Rounded';
+  font-family: 'Material Symbols Outlined';
 }
 
 .net-icon {
   font-family: Product Sans;
 }
 
-.net-icon {font-family: 'Material Symbols Rounded';}
+.net-icon {
+  font-family: 'Material Symbols Outlined';
+}
 
 scale trough {
   background-color: $bg1;
@@ -105,4 +120,20 @@ scale trough {
   min-width: 70px;
 }
 
+// .workspaces {
+//   margin: 5px 0px 5px 10px;
+// }
+//
+// .ws {
+//     padding: 2px;
+//     margin: 0px 5px 0px 5px;
+//     border-radius: 10px;
+//     background-color: red;
+// }
+//
+// .ws-active {
+//     margin: 0px 0px 0px 0px;
+//     border-radius: 10px;
+//     background-color: green;
+// }
 .workspaces { margin-left: 10px; }

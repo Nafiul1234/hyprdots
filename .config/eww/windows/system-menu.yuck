@@ -8,15 +8,18 @@
       :space-evenly false
       (label
         :class "time"
+        :style "font-family:ProductSans;"
         :text "${time.hour}:${time.minute}")
       (box
         :class "date-box"
         :space-evenly false
         (label
           :class "date"
+          :style "font-family:ProductSans;"
           :text {time.date})
         (label
           :class "day"
+          :style "font-family:ProductSans;"
           :text {time.day})))
 
     (centerbox
@@ -31,6 +34,7 @@
           (button
             :class "wifi-button"
             :onclick "scripts/net toggle"
+            :style "font-family:ProductSans;"
             {net.icon})
           (label
             :class "separator"
@@ -40,6 +44,7 @@
             :onclick "eww close system-menu && nm-connection-editor &"
             ""))
         (label
+          :style "font-family:ProductSans;"
           :text {net.essid}
           :xalign 0.5
           :limit-width 15))
@@ -54,6 +59,7 @@
           (button
             :class "bluetooth-button"
             :onclick "scripts/bluetooth toggle"
+            :style "font-family:ProductSans;"
             {bluetooth.icon})
           (label
             :class "separator"
@@ -90,6 +96,7 @@
         :class "volume-slider-box"
         :space-evenly false
         (button
+          :style "font-family:ProductSans;"
           :class "volume-icon icon"
           :onclick "scripts/volume mute SINK"
           {volume.icon})
@@ -104,6 +111,7 @@
         (button
           :class "volume-icon icon"
           :onclick "scripts/volume mute SOURCE"
+          :style "font-family:ProductSans;"
           "")
         (scale
           :class "volume-bar"
@@ -115,6 +123,7 @@
         :space-evenly false
         (button
           :class "brightness-slider-icon icon"
+          :style "font-family:ProductSans;"
           {brightness.icon})
         (scale
           :class "brightness-slider" 
@@ -172,6 +181,7 @@
             :halign "start"
             :class "sys-text-mem")
           (label
+            :style "font-family:ProductSans;"
             :text "${memory.used} | ${memory.total}"
             :halign "start"
             :class "sys-text-sub"))))
@@ -184,10 +194,11 @@
         :halign "start"
         (label
           :class "battery-icon icon"
-          :style "color: ${battery.color}"
+          :style "color: ${battery.color}; font-family:ProductSans;"
           :text {battery.icon})
         (label
           :class "battery-percentage"
+          :style "font-family:ProductSans;"
           :text {EWW_BATTERY["BAT0"].capacity})
         (label
           :class "battery-status"
