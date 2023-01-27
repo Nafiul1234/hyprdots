@@ -160,7 +160,7 @@ Thanks to:
 
 - [R/unixporn community](https://www.reddit.com/r/unixporn/)
 - [Hyprland Development Discord server](https://discord.com/invite/hQ9XvMUjjr)
-- [fufexan](https://github.com/fufexan/dotfiles) for the bar :)
+- [fufexan](https://github.com/fufexan/dotfiles) for the eww widgets :)
 
 </blockquote></details>
 
