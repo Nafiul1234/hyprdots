@@ -115,7 +115,7 @@
 
 ```zsh
 git clone https://github.com/iamverysimp1e/dots
-cd dots/.config
+cd dots/config
 ```
 
 > Copy configs files
