@@ -48,10 +48,10 @@
 
 - Base setups:
 
-  - Install Rofi, Dunst, kitty terminal, swaybg, swaylock-effects, swayidle, pamixer, light, Brillo:
+  - Install Rofi, Dunst, kitty terminal, swaybg, swaylock-fancy, swayidle, pamixer, light, Brillo:
 
   ```
-  yay -S rofi dunst kitty swaybg swaylock-effects swayidle pamixer light brillo
+  yay -S rofi dunst kitty swaybg swaylock-swaylock-fancy swayidle pamixer light brillo
   ```
 
     <details><summary> Eww bar version</summary><blockquote>
@@ -89,7 +89,7 @@
     ```
     yay -S rofi-emoji
     ```
-    > Also see [must have apps ](https://wiki.hyprland.org/Useful-Utilities/Must-have/) and [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) for more.
+    > Also see [must have apps](https://wiki.hyprland.org/Useful-Utilities/Must-have/) and [awesome-hyprland](https://github.com/hyprland-community/awesome-hyprland) for more.
 
 - Also, if you want gtk applications to fits with my colorscheme on my dots, I recommend the [decay themes](https://github.com/decaycs/decay-gtk).
   To change the gtk themes I use nwg-look.
@@ -115,7 +115,7 @@
 
 ```zsh
 git clone https://github.com/iamverysimp1e/dots
-cd dots/config
+cd dots/configs
 ```
 
 > Copy configs files
