@@ -29,6 +29,12 @@
 - [✏️ Text Editor & IDE]():
   - [💫 NeoVim](#neovim): **Main Text Editor**
   - [🔱 VsCodium](#VsCodium): **Just for back up**
+- [👽 Terminal](): 
+  - ☄ Emulator: 
+    - [kitty 😽](https://sw.kovidgoyal.net/kitty/)
+    - [Alacritty](https://alacritty.org/)
+  - [🌌 Shell](#shell): Zsh with [Zap](https://www.zapzsh.org/) plugin manager
+  - [🤖 Prompt](): [StarShip Prompt 🚀](https://starship.rs/guide/#%F0%9F%9A%80-installation)
 
 ## Hyprland 🍚<a name = "hypr"></a>:
 
