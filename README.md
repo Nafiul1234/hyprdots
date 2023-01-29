@@ -21,8 +21,8 @@
 
 ## Contents:
 
-### **👻 Don't blindly use my setup. Use at your own risk!!!**
-
+## **👻 Don't blindly use my setup. Use at your own risk!!!**
+### Overview 🎑 
 - [🌿 Windows Manger]():
   - [🍚 HyprLand](#hypr)
   - [🍙 GNOME](#gnome)
