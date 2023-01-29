@@ -2,9 +2,10 @@
 ## ░▀▀█░░█░░█▀█░█▀▄░▀▀█░█▀█░░█░░█▀▀
 ## ░▀▀▀░░▀░░▀░▀░▀░▀░▀▀▀░▀░▀░▀▀▀░▀░░
 
-# Use custom format:
+# Setups
 format="$directory$git_branch$character"
 right_format = """$git_status$cmd_duration"""
+add_newline = false 
 
 # Other languages configurations:
 c.disabled = true
