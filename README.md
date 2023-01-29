@@ -21,16 +21,18 @@
 
 ## Contents:
 
-## **👻 Don't blindly use my setup. Use at your own risk!!!**
-### Overview 🎑 
+### **👻 Don't blindly use my setup. Use at your own risk!!!**
+
+### Overview 🎑
+
 - [🌿 Windows Manger]():
   - [🍚 HyprLand](#hypr)
   - [🍙 GNOME](#gnome)
 - [✏️ Text Editor & IDE]():
   - [💫 NeoVim](#neovim): **Main Text Editor**
   - [🔱 VsCodium](#VsCodium): **Just for back up**
-- [👽 Terminal](): 
-  - **☄ Emulator**: 
+- [👽 Terminal]():
+  - **☄ Emulator**:
     - [kitty 😽](https://sw.kovidgoyal.net/kitty/)
     - [Alacritty](https://alacritty.org/)
   - [🌌 Shell](#shell): Zsh with [Zap](https://www.zapzsh.org/) plugin manager
