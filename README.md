@@ -222,7 +222,7 @@ Thanks to:
     </blockquote></details>
   </blockquote></details>
 
-## 🌌 Shell & 🤖 Prompt setups <a name = ""></a>
+## 🌌 Shell & 🤖 Prompt setups <a name = "shell"></a>
 
 <details><summary>How to ❓</summary><blockquote>
 - First of all install zsh based on your Linux distributions:
@@ -255,6 +255,7 @@ Thanks to:
     ```
 
 </blockquote></details>
+
 ## Neovim Setups <a name = "neovim"></a>:
 - Im currently working on ![OctoVim](https://github.com/OctoVim/OctoVim) which is yet another NeoVim IDE 
 > The conigs on my dots are still working as well so if you interested in try it out and give it star 💫
