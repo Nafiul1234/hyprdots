@@ -222,12 +222,8 @@ Thanks to:
   </blockquote></details>
 
 ## Neovim Setups <a name = "neovim"></a>:
-
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/Neovim/neovim_rice1.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/Neovim/neovim_rice2.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/Neovim/neovim_rice3.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/Neovim/neovim_rice4.png)
-![](https://github.com/iamverysimp1e/dots/blob/main/ScreenShots/Neovim/neovim_rice5.png)
+- Im currently working on ![OctoVim](https://github.com/OctoVim/OctoVim) which is yet another NeoVim IDE 
+> The conigs on my dots are still working as well so if you interested in try it out and give it star 💫
 
 <details><summary>How to setups</summary><blockquote>
 
