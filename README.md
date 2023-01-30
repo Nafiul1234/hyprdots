@@ -39,6 +39,9 @@
   - **🤖 Prompt**: [StarShip Prompt 🚀](https://starship.rs/guide/#%F0%9F%9A%80-installation)
 
 ## Hyprland 🍚<a name = "hypr"></a>:
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice1.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice2.png)
+![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice3.png)
 
 ### Setup 🔧:
 
