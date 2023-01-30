@@ -227,6 +227,7 @@ Thanks to:
 <details><summary>How to ❓</summary><blockquote>
 - First of all install zsh based on your Linux distributions:
     - For Arch Users:
+
     ```
     yay -S zsh
     ```
