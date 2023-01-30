@@ -28,17 +28,18 @@
 - [🌿 Windows Manger]():
   - [🍚 HyprLand](#hypr)
   - [🍙 GNOME](#gnome)
-- [✏️ Text Editor & IDE]():
-  - [💫 NeoVim](#neovim): **Main Text Editor**
-  - [🔱 VsCodium](#VsCodium): **Just for back up**
 - [👽 Terminal]():
   - **☄ Emulator**:
     - [kitty 😽](https://sw.kovidgoyal.net/kitty/)
     - [Alacritty](https://alacritty.org/)
   - [🌌 Shell](#shell): Zsh with [Zap](https://www.zapzsh.org/) plugin manager
   - **🤖 Prompt**: [StarShip Prompt 🚀](https://starship.rs/guide/#%F0%9F%9A%80-installation)
+- [✏️ Text Editor & IDE]():
+  - [💫 NeoVim](#neovim): **Main Text Editor**
+  - [🔱 VsCodium](#VsCodium): **Just for back up**
 
 ## Hyprland 🍚<a name = "hypr"></a>:
+
 ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice1.png)
 ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice2.png)
 ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/Rice3.png)
@@ -221,6 +222,39 @@ Thanks to:
     </blockquote></details>
   </blockquote></details>
 
+## 🌌 Shell & 🤖 Prompt setups <a name = ""></a>
+
+<details><summary>How to ❓</summary><blockquote>
+- First of all install zsh based on your Linux distributions:
+    - For Arch Users:
+    ```
+    yay -S zsh
+    ```
+    > For other linux distributions install using [this](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) guide
+- Then install [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) with [Zap](https://www.zapzsh.org/) plugin manager 
+    - For the prompt im currently using this awesome [StarShip Prompt 🚀](https://starship.rs/guide/#%F0%9F%9A%80-installation) prompt 
+
+- Also, if you want the terminal icon install **exa** using [this](https://the.exa.website/install) guide
+
+- Install my prompt: 
+    - Clone the repos and enter that: 
+    ```zsh
+    git clone https://github.com/iamverysimp1e/dots.git
+    cd dots/configs/prompt
+    ```
+    - Copy necessary files: 
+    ```zsh
+    cp starship.toml ~/.config && cp .zshrc $HOME
+    ```
+    > Then relaunch your terminal then congratulations your beautiful prompt is ready 🥳
+- Install the [nerd fonts](https://www.nerdfonts.com/font-downloads)
+    - Download then extract it to `~/.fonts`
+    - Then run this from the terminal 
+    ```
+    fc-cache -f -v 
+    ```
+
+</blockquote></details>
 ## Neovim Setups <a name = "neovim"></a>:
 - Im currently working on ![OctoVim](https://github.com/OctoVim/OctoVim) which is yet another NeoVim IDE 
 > The conigs on my dots are still working as well so if you interested in try it out and give it star 💫
