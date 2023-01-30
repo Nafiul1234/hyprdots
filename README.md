@@ -230,9 +230,9 @@ Thanks to:
     ```
     yay -S zsh
     ```
-    > For other linux distributions install using [this](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) guide
-- Then install [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) with [Zap](https://www.zapzsh.org/) plugin manager 
-    - For the prompt im currently using this awesome [StarShip Prompt 🚀](https://starship.rs/guide/#%F0%9F%9A%80-installation) prompt 
+    > For other linux distributions install using ![this](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) guide
+- Then install ![ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH) with ![Zap](https://www.zapzsh.org/) plugin manager 
+    - For the prompt im currently using this awesome ![StarShip Prompt 🚀](https://starship.rs/guide/#%F0%9F%9A%80-installation) prompt 
 
 - Also, if you want the terminal icon install **exa** using [this](https://the.exa.website/install) guide
 
