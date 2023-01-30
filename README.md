@@ -225,6 +225,7 @@ Thanks to:
 ## 🌌 Shell & 🤖 Prompt setups <a name = "shell"></a>
 
 <details><summary>How to ❓</summary><blockquote>
+
 - First of all install zsh based on your Linux distributions:
     - For Arch Users:
 
