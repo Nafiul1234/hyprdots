@@ -1,41 +1,42 @@
-/*==============================================================================================*
-
-  +-----+-----+-----+-----+-----+-----+-----+
-  | █▀▀ | ▄▀█ | █▀▀ | █▀▀ | ▄▀█ | █▀▄ | █▀▀ |
-  | █▄▄ | █▀█ | ▄▄█ | █▄▄ | █▀█ | █▄▀ | ██▄ |
-  +-----+-----+-----+-----+-----+-----+-----+
-
-  Description:    Cascade is a minimalstic and keyboard centered custom theme removing a lot of the
-                  subjective clutter default Firefox comes with. This theme is highly inspired by the
-                  stylistic choices of SimpleFox by Miguel Ávila. 🦊
-                  https://github.com/migueravila/SimpleFox
-
-  Author:         Andreas Grafen
-                  (https://andreas.grafen.info)
-
-  Repository:     https://github.com/andreasgrafen/cascade
-                  Thank you Nick, Abdallah, Benyamin and Wael for all the great suggestions for improvements! ♡
-
-                  Nick:     https://github.com/nicksundermeyer
-                  Abdallah: https://github.com/HeiWiper
-                  Benyamin: https://github.com/benyaminl
-                  Wael:     https://github.com/wael444
-
-                  If you're looking for a **mouse-friendly** clone please check out Waterfall.
-                  https://github.com/crambaud/waterfall
-
-*==============================================================================================*/
-
-@import 'includes/cascade-config.css';
-@import 'includes/cascade-macchiato.css';
-
-@import 'includes/cascade-layout.css';
-@import 'includes/cascade-responsive.css';
-@import 'includes/cascade-floating-panel.css';
-
-@import 'includes/cascade-tcr.css';
-@import 'includes/cascade-nav-bar.css';
-
 #webrtcIndicator {
   display: none !important;
 }
+
+#nav-bar:not([customizing="true"]):not([inFullscreen]) {
+	min-height: 1px !important;
+	max-height: 0px !important;
+	margin-top: 1px !important;
+	margin-bottom: -1px !important;
+	transition: all 100ms linear 0s !important;
+	z-index: -5 !important;
+}
+
+#navigator-toolbox:hover:not([inFullscreen]) :-moz-any(#nav-bar),
+#navigator-toolbox:focus-within :-moz-any(#nav-bar) {
+	min-height: 40px !important;
+	max-height: 40px !important;
+	margin-top: 1px !important;
+	margin-bottom: -40px !important;
+	transition: all 100ms linear 0s !important;
+	z-index: 5 !important;
+} 
+
+#urlbar{
+	margin-top: 20px !important;
+}
+#nav-bar .toolbarbutton-1{
+	margin-top: -15px !important;
+}
+#urlbar[breakout][breakout-extend] {
+    top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;;
+}
+#urlbar[breakout][breakout-extend] > #urlbar-input-container{
+	height: 30px !important;
+	margin-top: -10px !important;
+	margin-bottom:  10px !important;
+	top: 10px !important;
+}
+#urlbar-input-container{
+	top: 4px !important;
+	margin-top: -4px !important;
+} 
