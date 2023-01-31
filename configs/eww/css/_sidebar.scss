@@ -80,12 +80,12 @@
 }
 .volume-bar highlight {
   @include rounding;
-  background-image: linear-gradient(to right, $teal, $sky);
+  background-image: linear-gradient(to right, $white, $sky);
 }
 
 .brightness-slider-box scale highlight {
   @include rounding;
-  background-image: linear-gradient(to right, $yellow, $peach);
+  background-image: linear-gradient(to right, $lavender, $peach);
 }
 
 .bottom-row {
@@ -124,4 +124,3 @@
 
   button:hover { background-color: #b695de; }
 }
-

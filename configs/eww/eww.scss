@@ -14,7 +14,6 @@
 * {
   all: unset;
   transition: 200ms ease;
-  // font-family: Product Sans, Roboto, sans-serif;
 }
 
 @import 'css/calendar';
@@ -43,7 +42,6 @@ tooltip {
   }
 }
 
-.icon,
 .icon,
 .vol-icon label {
   font-family: 'Material Symbols Outlined';
@@ -80,7 +78,7 @@ tooltip {
 .launcher_module {
   background-color: $bg;
   border-radius: 12.5px;
-  margin: 0px 1px 0px 10px;
+  margin: 0px 7px 0px 10px;
 }
 
 .vol-icon,
@@ -120,20 +118,11 @@ scale trough {
   min-width: 70px;
 }
 
-// .workspaces {
-//   margin: 5px 0px 5px 10px;
-// }
-//
-// .ws {
-//     padding: 2px;
-//     margin: 0px 5px 0px 5px;
-//     border-radius: 10px;
-//     background-color: red;
-// }
-//
-// .ws-active {
-//     margin: 0px 0px 0px 0px;
-//     border-radius: 10px;
-//     background-color: green;
-// }
-.workspaces { margin-left: 10px; }
+.workspaces {
+  margin-left: 8px;
+  border-radius: 10px;
+}
+
+.seperator {
+  color: grey;
+}

@@ -29,22 +29,20 @@
         :space-evenly false
         :orientation "v"
         (box
-          :class "element icon"
+          :class "element icon ${net.class}"
           :space-evenly false
           (button
             :class "wifi-button"
             :onclick "scripts/net toggle"
-            :style "font-family:ProductSans;"
             {net.icon})
           (label
             :class "separator"
-            :text "|")
+            :text "│")
           (button
             :class "wifi-arrow-btn"
             :onclick "eww close system-menu && nm-connection-editor &"
             ""))
         (label
-          :style "font-family:ProductSans;"
           :text {net.essid}
           :xalign 0.5
           :limit-width 15))
@@ -54,16 +52,15 @@
         :space-evenly false
         :orientation "v"
         (box
-          :class "element icon"
+          :class "element icon ${bluetooth.class}"
           :space-evenly false
           (button
             :class "bluetooth-button"
             :onclick "scripts/bluetooth toggle"
-            :style "font-family:ProductSans;"
             {bluetooth.icon})
           (label
             :class "separator"
-            :text "|")
+            :text "│")
           (button
             :class "bluetooth-arrow-btn"
             :onclick "eww close system-menu && blueberry"
@@ -71,7 +68,7 @@
         (label
           :text {bluetooth.text}
           :xalign 0.5
-          :tooltip "${bluetooth.text} ${bluetooth.batt_icon}"
+          :tooltip "${bluetooth.text} ${bluetooth.battery}"
           :limit-width 15))
 
       (box
@@ -82,6 +79,7 @@
           :class "element"
           (button
             :class "airplane-button"
+            :style "font-family:Material Symbols Outlined;"
             :onclick "scripts/airplane toggle"
             airplane))
         (label

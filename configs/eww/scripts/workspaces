@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# define colors
 colors=("#89b4fa")
 dimmed=("#b4befe")
 empty="#313244"
@@ -84,4 +83,3 @@ socat -u UNIX-CONNECT:/tmp/hypr/"$HYPRLAND_INSTANCE_SIGNATURE"/.socket2.sock - |
   esac
   generate
 done
-

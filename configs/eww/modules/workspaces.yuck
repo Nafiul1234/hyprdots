@@ -11,5 +11,5 @@
            (button
                     :onclick "hyprctl dispatch workspace ${i.number}"
                     :class "ws icon"
-                    :style "color: ${i.color}; font-size: 69pt;"
-                    "${ws-icons[i.number - 1]}")))))
+                    :style "color: ${i.color};"
+                    (label :style "font-size: 15pt;" :text "${ws-icons[i.number - 1]}"))))))
