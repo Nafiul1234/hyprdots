@@ -69,7 +69,7 @@
     <details><summary> Eww bar version</summary><blockquote>
 
   ```
-  yay -S bc blueberry bluez coreutlis dbus findutlis gawk gnunet jaq light networkmanager network-manager-applet pavucontrol playerctl procps ripgrep socat udev upower util-linux wget wireplumber wlogout eww-wayland
+  yay -S bc blueberry bluez coreutils dbus findutils gawk gnunet jaq light networkmanager network-manager-applet pavucontrol playerctl procps ripgrep socat udev upower util-linux wget wireplumber wlogout eww-wayland
   ```
 
     </blockquote></details>
