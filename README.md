@@ -77,9 +77,6 @@
     <details><summary> Waybar version</summary><blockquote>
 
   ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice1.png)
-  ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice2.png)
-  ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice3.png)
-  ![](https://raw.githubusercontent.com/iamverysimp1e/dots/main/ScreenShots/HyprLand/archive/Rice4.png)
 
   - You just simply install waybar-hyprland package:
 
