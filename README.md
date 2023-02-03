@@ -63,7 +63,7 @@
   - Install Rofi, Dunst, kitty terminal, swaybg, swaylock-fancy, swayidle, pamixer, light, Brillo:
 
   ```
-  yay -S rofi dunst kitty swaybg swaylock-swaylock-fancy swayidle pamixer light brillo
+  yay -S rofi dunst kitty swaybg swaylock-fancy-git swayidle pamixer light brillo
   ```
 
     <details><summary> Eww bar version</summary><blockquote>
