@@ -10,9 +10,9 @@
   --uc-identity-colour-pink: #f78fb3;
   --uc-identity-colour-purple: #786fa6;
 
-  --uc-base-colour: #0d0f16;
-  --uc-base-fg: #ffffff;
-  --uc-highlight-colour: #10131c;
+  --uc-base-colour: #11111b;
+  --uc-base-fg: #bac2de;
+  --uc-highlight-colour: #191926;
   --uc-inverted-colour: #10131c;
   --uc-muted-colour: #10131c;
   --uc-accent-colour: #10131c;
@@ -30,6 +30,7 @@
 .tab:hover,
 .tab.active {
   background: var(--uc-highlight-colour);
+  border-radius: 10px;
 }
 
 #tablist-wrapper .tab-title-wrapper {
@@ -50,6 +51,7 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 .tab,
 .tab.active {
   border-bottom: none !important;
+  border-radius: 10px;
 }
 
 #pinnedtablist:not(.compact) .tab {
@@ -61,6 +63,7 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 
 .tab {
   overflow: visible;
+  border-radius: 10px;
 }
 
 #pinnedtablist:not(.compact) .tab[data-identity-color] .tab-context::before,
@@ -68,11 +71,9 @@ body:hover #tablist-wrapper .tab-title-wrapper {
   position: absolute;
   top: 4px;
   bottom: 4px;
-
   width: 2px;
-
   background: var(--identity-color);
-
+  border-radius: 10px;
   content: '';
 }
 
@@ -114,3 +115,4 @@ body:hover #tablist-wrapper .tab-title-wrapper {
 [data-identity-color='purple'] {
   --identity-color: var(--uc-identity-colour-purple);
 }
+
