@@ -22,7 +22,7 @@ local kind_icons = {
 	Constructor = "",
 	Field = "",
 	Variable = "",
-	Class = "",
+	Class = "",
 	Interface = "",
 	Module = "",
 	Property = "",
@@ -37,9 +37,9 @@ local kind_icons = {
 	Folder = "",
 	EnumMember = "",
 	Constant = "",
-	Struct = "",
+	Struct = "",
 	Event = "",
-	Operator = "",
+	Operator = "",
 	TypeParameter = "",
 }
 
@@ -92,28 +92,20 @@ cmp.setup({
 			"s",
 		}),
 	}),
+  
 	formatting = {
-		fields = { "kind", "abbr", "menu" },
-		format = function(entry, vim_item)
-			vim_item.kind = kind_icons[vim_item.kind]
-			vim_item.menu = ({
-				nvim_lsp = "LSP",
-				nvim_lua = "",
-				luasnip = "Snippet",
-				buffer = "Buffer",
-				path = "Path",
-				emoji = "Emoji",
-			})[entry.source.name]
+		format = function(_, vim_item)
+			vim_item.kind = string.format("%s %s", kind_icons[vim_item.kind], vim_item.kind)
 			return vim_item
 		end,
 	},
 	sources = {
 		{ name = "nvim_lsp" },
 		{ name = "nvim_lua" },
+    { name = "vsnip" },
 		{ name = "luasnip" },
 		{ name = "buffer" },
 		{ name = "path" },
-		{ name = "emoji" },
 	},
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
@@ -121,7 +113,6 @@ cmp.setup({
 	},
 	window = {
 		completion = cmp.config.window.bordered(),
-		documentation = cmp.config.window.bordered(),
 	},
 	sorting = {
 		comparators = {

@@ -6,12 +6,17 @@ end
 local hide_in_width = function()
 	return vim.fn.winwidth(0) > 80
 end
+local spaces = {
+	function()
+		return " "
+	end,
+	padding = -1,
+}
 
 local diagnostics = {
 	"diagnostics",
 	sources = { "nvim_diagnostic" },
 	sections = {
-		"info",
 		"error",
 		"warn",
 		"hint",
@@ -26,21 +31,11 @@ local diagnostics = {
 	always_visible = false,
 }
 
-local spaces = { 
-  function ()
-    return " "
-  end
-}
-
 local branch = {
 	"branch",
 	icon = "",
 	separator = { left = "", right = "" },
-	{
-		function()
-			return " "
-		end,
-	},
+  padding = 0.1
 }
 
 local diff = {
@@ -61,12 +56,11 @@ local filetype = {
 
 local location = {
 	"location",
-  padding = 1,
 }
 
 local custom_icons = {
 	function()
-		return ""
+		return ""
 	end,
 	separator = { left = "", right = "" },
 }
@@ -74,6 +68,7 @@ local custom_icons = {
 local modes = {
 	"mode",
 	separator = { left = "", right = "" },
+	padding = 0.8,
 }
 
 local indent = function()
@@ -160,7 +155,7 @@ lualine.setup({
 		theme = "auto",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
-    disabled_filetypes = { "alpha", "dashboard", 'packer', 'NVimTree' },
+		disabled_filetypes = { "alpha", "dashboard", "packer", "neo-tree" },
 		always_divide_middle = true,
 	},
 	sections = {
@@ -169,45 +164,50 @@ lualine.setup({
 			modes,
 		},
 		lualine_b = {
+		},
+		lualine_c = {
+      spaces,
 			{
 				"filetype",
 				icon_only = true,
-				colored = false,
+				colored = true,
 				padding = 1,
-        color = { bg = "#2a2c3f"}
+				color = { bg = "#2a2c3f" },
+				separator = { left = "", right = " " },
 			},
 			{
 				"filename",
-				padding = 1,
-				separator = { left = "", right = "" },
-        color = { bg = "#2a2c3f"}
+        file_status = false,
+				padding = 0.3,
+				separator = { left = "", right = " " },
+				color = { bg = "#2a2c3f" },
 			},
-    },
-		lualine_c = {
 			branch,
 			diff,
 		},
 		lualine_x = {
 			diagnostics,
-
-      {
-        lsp_progess,
-      },
+			{
+				lsp_progess,
+			},
 			{
 				function()
 					return "﬌"
 				end,
 				separator = { left = "", right = "" },
 				color = { bg = "#8FBCBB", fg = "#000000" },
+				padding = 0.3,
 			},
-
-			indent,
+			{
+				indent,
+			},
 			{
 				function()
 					return ""
 				end,
 				separator = { left = "", right = "" },
 				color = { bg = "#ECD3A0", fg = "#000000" },
+				padding = 0.3,
 			},
 			"progress",
 			{
@@ -216,11 +216,11 @@ lualine.setup({
 				end,
 				separator = { left = "", right = "" },
 				color = { bg = "#86AAEC", fg = "#000000" },
+				padding = 0.1,
 			},
-      location,
+			location,
 		},
-		lualine_y = {
-    },
+		lualine_y = {},
 		lualine_z = {},
 	},
 })
